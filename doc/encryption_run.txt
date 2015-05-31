@@ -1,0 +1,491 @@
+Encrypting: 0123456789abcdef with Key: ohnoammyitisnogo
+
+Adding Round Key
+|30 31 32 33| |6f 68 6e 6f| |5f 59 5c 5c|
+|34 35 36 37| |61 6d 6d 79| |55 58 5b 4e|
+|38 39 61 62|+|69 74 69 73|=|51 4d 8  11|
+|63 64 65 66| |6e 6f 67 6f| |d  b  2  9 |
+
+Sub Bytes
+|5f 59 5c 5c| |6b ec 66 66|
+|55 58 5b 4e| |4f 83 d4 65|
+|51 4d 8  11|=|43 4  33 ff|
+|d  b  2  9 | |f9 8f 22 71|
+
+Shift Rows
+|6b ec 66 66| |6b ec 66 66|
+|4f 83 d4 65| |83 d4 65 4f|
+|43 4  33 ff|=|33 ff 43 4 |
+|f9 8f 22 71| |71 f9 8f 22|
+
+Mix Columns
+|2  3  1  1 | |6b ec 66 66| |a0 a2 af 3b|
+|1  2  3  1 | |83 d4 65 4f| |f8 bc e6 d6|
+|1  1  2  3 |*|33 ff 43 4 |=|1d cd a5 47|
+|3  1  1  2 | |71 f9 8f 22| |ef ed 23 a5|
+
+Adding Round Key
+|a0 a2 af 3b| |45 fc c4 7b| |e5 5e 6b 40|
+|f8 bc e6 d6| |e  28 91 bd| |f6 94 77 6b|
+|1d cd a5 47|+|12 7a 41 e2|=|f  b7 e4 a5|
+|ef ed 23 a5| |d3 7d 1d 2e| |3c 90 3e 8b|
+
+Sub Bytes
+|e5 5e 6b 40| |a6 cd e4 c0|
+|f6 94 77 6b| |12 cc d5 e4|
+|f  b7 e4 a5|=|5b 25 9f d |
+|3c 90 3e 8b| |c4 42 5f 87|
+
+Shift Rows
+|a6 cd e4 c0| |a6 cd e4 c0|
+|12 cc d5 e4| |cc d5 e4 12|
+|5b 25 9f d |=|9f d  5b 25|
+|c4 42 5f 87| |87 c4 42 5f|
+
+Mix Columns
+|2  3  1  1 | |a6 cd e4 c0| |0  2c fd 7d|
+|1  2  3  1 | |cc d5 e4 12| |18 5  32 d4|
+|1  1  2  3 |*|9f d  5b 25|=|dd ff 70 79|
+|3  1  1  2 | |87 c4 42 5f| |b7 7  a6 78|
+
+Adding Round Key
+|0  2c fd 7d| |34 42 88 9 | |34 6e 75 74|
+|18 5  32 d4| |20 1c d3 35| |38 19 e1 e1|
+|dd ff 70 79|+|1b 5a 5d 31|=|c6 a5 2d 48|
+|b7 7  a6 78| |e6 66 47 73| |51 61 e1 b |
+
+Sub Bytes
+|34 6e 75 74| |6c 2b eb a8|
+|38 19 e1 e1| |a5 c9 10 10|
+|c6 a5 2d 48|=|3a d  b8 21|
+|51 61 e1 b | |43 38 10 8f|
+
+Shift Rows
+|6c 2b eb a8| |6c 2b eb a8|
+|a5 c9 10 10| |c9 10 10 a5|
+|3a d  b8 21|=|b8 21 3a d |
+|43 38 10 8f| |8f 43 38 10|
+
+Mix Columns
+|2  3  1  1 | |6c 2b eb a8| |5  4  55 a2|
+|1  2  3  1 | |c9 10 10 a5| |b9 2b bd 54|
+|1  1  2  3 |*|b8 21 3a d |=|44 bc c7 27|
+|3  1  1  2 | |8f 43 38 10| |6a ca d6 c1|
+
+Adding Round Key
+|5  4  55 a2| |ee 1b 70 25| |eb 1f 25 87|
+|b9 2b bd 54| |53 f2 c8 45| |ea d9 75 11|
+|44 bc c7 27|+|3e 9  af f9|=|7a b5 68 de|
+|6a ca d6 c1| |a3 58 4e dc| |c9 92 98 1d|
+
+Sub Bytes
+|eb 1f 25 87| |6d 86 e6 28|
+|ea d9 75 11| |e9 2  eb ff|
+|7a b5 68 de|=|fb 26 2a 56|
+|c9 92 98 1d| |61 39 1  4c|
+
+Shift Rows
+|6d 86 e6 28| |6d 86 e6 28|
+|e9 2  eb ff| |2  eb ff e9|
+|fb 26 2a 56|=|2a 56 fb 26|
+|61 39 1  4c| |4c 61 39 1 |
+
+Mix Columns
+|2  3  1  1 | |6d 86 e6 28| |ba 6  f  fd|
+|1  2  3  1 | |2  eb ff e9| |5b 7a 2c 20|
+|1  1  2  3 |*|2a 56 fb 26|=|ef 62 15 8e|
+|3  1  1  2 | |4c 61 39 1 | |7  44 ed b5|
+
+Adding Round Key
+|ba 6  f  fd| |34 98 15 b | |8e 9e 1a f6|
+|5b 7a 2c 20| |8f c6 50 50| |d4 bc 7c 70|
+|ef 62 15 8e|+|35 86 69 a9|=|da e4 7c 27|
+|7  44 ed b5| |f3 6d c8 b5| |f4 29 25 0 |
+
+Sub Bytes
+|8e 9e 1a f6| |60 20 e0 12|
+|d4 bc 7c 70| |ab fa 7d 0 |
+|da e4 7c 27|=|c8 9f 7d f2|
+|f4 29 25 0 | |e1 44 e6 63|
+
+Shift Rows
+|60 20 e0 12| |60 20 e0 12|
+|ab fa 7d 0 | |fa 7d 0  ab|
+|c8 9f 7d f2|=|7d f2 c8 9f|
+|e1 44 e6 63| |63 e1 44 e6|
+
+Mix Columns
+|2  3  1  1 | |60 20 e0 12| |61 d4 fd 11|
+|1  2  3  1 | |fa 7d 0  ab| |c1 9c 4d 3 |
+|1  1  2  3 |*|7d f2 c8 9f|=|c5 9a d  ad|
+|3  1  1  2 | |63 e1 44 e6| |e1 9c d1 7f|
+
+Adding Round Key
+|61 d4 fd 11| |cb 31 44 2f| |aa e5 b9 3e|
+|c1 9c 4d 3 | |3a d  61 14| |fb 91 2c 17|
+|c5 9a d  ad|+|1a bc 64 c8|=|df 26 69 65|
+|e1 9c d1 7f| |e7 77 74 d1| |6  eb a5 ae|
+
+Sub Bytes
+|aa e5 b9 3e| |75 a6 57 5f|
+|fb 91 2c 17| |54 3d 3f ea|
+|df 26 69 65|=|8e 77 98 e8|
+|6  eb a5 ae| |5c 6d d  46|
+
+Shift Rows
+|75 a6 57 5f| |75 a6 57 5f|
+|54 3d 3f ea| |3d 3f ea 54|
+|8e 77 98 e8|=|98 e8 8e 77|
+|5c 6d d  46| |46 5c 6d d |
+
+Mix Columns
+|2  3  1  1 | |75 a6 57 5f| |73 8  c2 38|
+|1  2  3  1 | |3d 3f ea 54| |50 d  7c 63|
+|1  1  2  3 |*|98 e8 8e 77|=|3  1c a7 f2|
+|3  1  1  2 | |46 5c 6d d | |b6 34 47 d8|
+
+Adding Round Key
+|73 8  c2 38| |1e e4 ec 7e| |6d ec 2e 46|
+|50 d  7c 63| |eb 13 85 f8| |bb 1e f9 9b|
+|3  1c a7 f2|+|64 57 77 4d|=|67 4b d0 bf|
+|b6 34 47 d8| |1f 13 23 a6| |a9 27 64 7e|
+
+Sub Bytes
+|6d ec 2e 46| |a9 9  69 e3|
+|bb 1e f9 9b| |41 b1 2e f5|
+|67 4b d0 bf|=|aa 32 c7 c6|
+|a9 27 64 7e| |24 f2 7  5a|
+
+Shift Rows
+|a9 9  69 e3| |a9 9  69 e3|
+|41 b1 2e f5| |b1 2e f5 41|
+|aa 32 c7 c6|=|c7 c6 aa 32|
+|24 f2 7  5a| |5a 24 f2 7 |
+
+Mix Columns
+|2  3  1  1 | |a9 9  69 e3| |1c 82 24 81|
+|1  2  3  1 | |b1 2e f5 41| |d8 8a 8f 30|
+|1  1  2  3 |*|c7 c6 aa 32|=|c9 76 de cf|
+|3  1  1  2 | |5a 24 f2 7 | |88 bb b1 e9|
+
+Adding Round Key
+|1c 82 24 81| |b8 32 8e 7a| |a4 b0 aa fb|
+|d8 8a 8f 30| |4d ab b7 76| |95 21 38 46|
+|c9 76 de cf|+|1e 1a dc fa|=|d7 6c 2  35|
+|88 bb b1 e9| |69 d  39 7a| |e1 b6 88 93|
+
+Sub Bytes
+|a4 b0 aa fb| |64 13 75 54|
+|95 21 38 46| |4e b4 a5 e3|
+|d7 6c 2  35|=|35 1f 22 7b|
+|e1 b6 88 93| |10 76 97 82|
+
+Shift Rows
+|64 13 75 54| |64 13 75 54|
+|4e b4 a5 e3| |b4 a5 e3 4e|
+|35 1f 22 7b|=|22 7b 35 1f|
+|10 76 97 82| |82 10 76 97|
+
+Mix Columns
+|2  3  1  1 | |64 13 75 54| |5  13 3d f2|
+|1  2  3  1 | |b4 a5 e3 4e| |59 75 2b 7e|
+|1  1  2  3 |*|22 7b 35 1f|=|a3 70 66 2c|
+|3  1  1  2 | |82 10 76 97| |8f cb a5 32|
+
+Adding Round Key
+|5  13 3d f2| |60 cb 1e f7| |65 d8 23 5 |
+|59 75 2b 7e| |37 cb 7c 68| |6e be 57 16|
+|a3 70 66 2c|+|e9 2d 17 86|=|4a 5d 71 aa|
+|8f cb a5 32| |1  e4 14 6d| |8e 2f b1 5f|
+
+Sub Bytes
+|65 d8 23 5 | |e8 5d 62 b6|
+|6e be 57 16| |2b 67 29 db|
+|4a 5d 71 aa|=|a1 15 dc 75|
+|8e 2f b1 5f| |60 a3 45 6b|
+
+Shift Rows
+|e8 5d 62 b6| |e8 5d 62 b6|
+|2b 67 29 db| |67 29 db 2b|
+|a1 15 dc 75|=|dc 75 a1 15|
+|60 a3 45 6b| |6b 60 a3 45|
+
+Mix Columns
+|2  3  1  1 | |e8 5d 62 b6| |7f d4 1a f0|
+|1  2  3  1 | |67 29 db 2b| |98 f0 94 9a|
+|1  1  2  3 |*|dc 75 a1 15|=|3b 3e 1e 78|
+|3  1  1  2 | |6b 60 a3 45| |e4 7b 2b df|
+
+Adding Round Key
+|7f d4 1a f0| |9c 54 8  6e| |e3 80 12 9e|
+|98 f0 94 9a| |5a 57 28 60| |c2 a7 bc fa|
+|3b 3e 1e 78|+|87 77 40 ae|=|bc 49 5e d6|
+|e4 7b 2b df| |61 63 63 2d| |85 18 48 f2|
+
+Sub Bytes
+|e3 80 12 9e| |e  b2 6a 20|
+|c2 a7 bc fa| |ce df fa 8d|
+|bc 49 5e d6|=|fa 4a cd a0|
+|85 18 48 f2| |ba ac 21 3b|
+
+Shift Rows
+|e  b2 6a 20| |e  b2 6a 20|
+|ce df fa 8d| |df fa 8d ce|
+|fa 4a cd a0|=|cd a0 fa 4a|
+|ba ac 21 3b| |3b ba ac 21|
+
+Adding Round Key
+|e  b2 6a 20| |15 85 d9 28| |1b 37 b3 8 |
+|df fa 8d ce| |77 42 ad b9| |a8 b8 20 77|
+|cd a0 fa 4a|+|af 0  2  3 |=|62 a0 f8 49|
+|3b ba ac 21| |d8 cc 63 2f| |e3 76 cf e |
+
+
+Ciphertext: 7³¨¸ wb øIãvÏ
+
+--------------------------------------------
+
+Decrypting: 7³¨¸ wb øIãvÏ with Key: ohnoammyitisnogo
+
+Adding Round Key
+|1b 37 b3 8 | |15 85 d9 28| |e  b2 6a 20|
+|a8 b8 20 77| |77 42 ad b9| |df fa 8d ce|
+|62 a0 f8 49|+|af 0  2  3 |=|cd a0 fa 4a|
+|e3 76 cf e | |d8 cc 63 2f| |3b ba ac 21|
+
+Inverting Shift Rows
+|e  b2 6a 20| |e  b2 6a 20|
+|df fa 8d ce| |ce df fa 8d|
+|cd a0 fa 4a|=|fa 4a cd a0|
+|3b ba ac 21| |ba ac 21 3b|
+
+Inverting Sub Bytes
+|e  b2 6a 20| |e3 80 12 9e|
+|ce df fa 8d| |c2 a7 bc fa|
+|fa 4a cd a0|=|bc 49 5e d6|
+|ba ac 21 3b| |85 18 48 f2|
+
+Adding Round Key
+|e3 80 12 9e| |9c 54 8  6e| |7f d4 1a f0|
+|c2 a7 bc fa| |5a 57 28 60| |98 f0 94 9a|
+|bc 49 5e d6|+|87 77 40 ae|=|3b 3e 1e 78|
+|85 18 48 f2| |61 63 63 2d| |e4 7b 2b df|
+
+Inverting Mix Columns
+|e  b  d  9 | |7f d4 1a f0| |e8 5d 62 b6|
+|9  e  b  d | |98 f0 94 9a| |67 29 db 2b|
+|d  9  e  b |*|3b 3e 1e 78|=|dc 75 a1 15|
+|b  d  9  e | |e4 7b 2b df| |6b 60 a3 45|
+
+Inverting Shift Rows
+|e8 5d 62 b6| |e8 5d 62 b6|
+|67 29 db 2b| |2b 67 29 db|
+|dc 75 a1 15|=|a1 15 dc 75|
+|6b 60 a3 45| |60 a3 45 6b|
+
+Inverting Sub Bytes
+|e8 5d 62 b6| |65 d8 23 5 |
+|2b 67 29 db| |6e be 57 16|
+|a1 15 dc 75|=|4a 5d 71 aa|
+|60 a3 45 6b| |8e 2f b1 5f|
+
+Adding Round Key
+|65 d8 23 5 | |60 cb 1e f7| |5  13 3d f2|
+|6e be 57 16| |37 cb 7c 68| |59 75 2b 7e|
+|4a 5d 71 aa|+|e9 2d 17 86|=|a3 70 66 2c|
+|8e 2f b1 5f| |1  e4 14 6d| |8f cb a5 32|
+
+Inverting Mix Columns
+|e  b  d  9 | |5  13 3d f2| |64 13 75 54|
+|9  e  b  d | |59 75 2b 7e| |b4 a5 e3 4e|
+|d  9  e  b |*|a3 70 66 2c|=|22 7b 35 1f|
+|b  d  9  e | |8f cb a5 32| |82 10 76 97|
+
+Inverting Shift Rows
+|64 13 75 54| |64 13 75 54|
+|b4 a5 e3 4e| |4e b4 a5 e3|
+|22 7b 35 1f|=|35 1f 22 7b|
+|82 10 76 97| |10 76 97 82|
+
+Inverting Sub Bytes
+|64 13 75 54| |a4 b0 aa fb|
+|4e b4 a5 e3| |95 21 38 46|
+|35 1f 22 7b|=|d7 6c 2  35|
+|10 76 97 82| |e1 b6 88 93|
+
+Adding Round Key
+|a4 b0 aa fb| |b8 32 8e 7a| |1c 82 24 81|
+|95 21 38 46| |4d ab b7 76| |d8 8a 8f 30|
+|d7 6c 2  35|+|1e 1a dc fa|=|c9 76 de cf|
+|e1 b6 88 93| |69 d  39 7a| |88 bb b1 e9|
+
+Inverting Mix Columns
+|e  b  d  9 | |1c 82 24 81| |a9 9  69 e3|
+|9  e  b  d | |d8 8a 8f 30| |b1 2e f5 41|
+|d  9  e  b |*|c9 76 de cf|=|c7 c6 aa 32|
+|b  d  9  e | |88 bb b1 e9| |5a 24 f2 7 |
+
+Inverting Shift Rows
+|a9 9  69 e3| |a9 9  69 e3|
+|b1 2e f5 41| |41 b1 2e f5|
+|c7 c6 aa 32|=|aa 32 c7 c6|
+|5a 24 f2 7 | |24 f2 7  5a|
+
+Inverting Sub Bytes
+|a9 9  69 e3| |6d ec 2e 46|
+|41 b1 2e f5| |bb 1e f9 9b|
+|aa 32 c7 c6|=|67 4b d0 bf|
+|24 f2 7  5a| |a9 27 64 7e|
+
+Adding Round Key
+|6d ec 2e 46| |1e e4 ec 7e| |73 8  c2 38|
+|bb 1e f9 9b| |eb 13 85 f8| |50 d  7c 63|
+|67 4b d0 bf|+|64 57 77 4d|=|3  1c a7 f2|
+|a9 27 64 7e| |1f 13 23 a6| |b6 34 47 d8|
+
+Inverting Mix Columns
+|e  b  d  9 | |73 8  c2 38| |75 a6 57 5f|
+|9  e  b  d | |50 d  7c 63| |3d 3f ea 54|
+|d  9  e  b |*|3  1c a7 f2|=|98 e8 8e 77|
+|b  d  9  e | |b6 34 47 d8| |46 5c 6d d |
+
+Inverting Shift Rows
+|75 a6 57 5f| |75 a6 57 5f|
+|3d 3f ea 54| |54 3d 3f ea|
+|98 e8 8e 77|=|8e 77 98 e8|
+|46 5c 6d d | |5c 6d d  46|
+
+Inverting Sub Bytes
+|75 a6 57 5f| |aa e5 b9 3e|
+|54 3d 3f ea| |fb 91 2c 17|
+|8e 77 98 e8|=|df 26 69 65|
+|5c 6d d  46| |6  eb a5 ae|
+
+Adding Round Key
+|aa e5 b9 3e| |cb 31 44 2f| |61 d4 fd 11|
+|fb 91 2c 17| |3a d  61 14| |c1 9c 4d 3 |
+|df 26 69 65|+|1a bc 64 c8|=|c5 9a d  ad|
+|6  eb a5 ae| |e7 77 74 d1| |e1 9c d1 7f|
+
+Inverting Mix Columns
+|e  b  d  9 | |61 d4 fd 11| |60 20 e0 12|
+|9  e  b  d | |c1 9c 4d 3 | |fa 7d 0  ab|
+|d  9  e  b |*|c5 9a d  ad|=|7d f2 c8 9f|
+|b  d  9  e | |e1 9c d1 7f| |63 e1 44 e6|
+
+Inverting Shift Rows
+|60 20 e0 12| |60 20 e0 12|
+|fa 7d 0  ab| |ab fa 7d 0 |
+|7d f2 c8 9f|=|c8 9f 7d f2|
+|63 e1 44 e6| |e1 44 e6 63|
+
+Inverting Sub Bytes
+|60 20 e0 12| |8e 9e 1a f6|
+|ab fa 7d 0 | |d4 bc 7c 70|
+|c8 9f 7d f2|=|da e4 7c 27|
+|e1 44 e6 63| |f4 29 25 0 |
+
+Adding Round Key
+|8e 9e 1a f6| |34 98 15 b | |ba 6  f  fd|
+|d4 bc 7c 70| |8f c6 50 50| |5b 7a 2c 20|
+|da e4 7c 27|+|35 86 69 a9|=|ef 62 15 8e|
+|f4 29 25 0 | |f3 6d c8 b5| |7  44 ed b5|
+
+Inverting Mix Columns
+|e  b  d  9 | |ba 6  f  fd| |6d 86 e6 28|
+|9  e  b  d | |5b 7a 2c 20| |2  eb ff e9|
+|d  9  e  b |*|ef 62 15 8e|=|2a 56 fb 26|
+|b  d  9  e | |7  44 ed b5| |4c 61 39 1 |
+
+Inverting Shift Rows
+|6d 86 e6 28| |6d 86 e6 28|
+|2  eb ff e9| |e9 2  eb ff|
+|2a 56 fb 26|=|fb 26 2a 56|
+|4c 61 39 1 | |61 39 1  4c|
+
+Inverting Sub Bytes
+|6d 86 e6 28| |eb 1f 25 87|
+|e9 2  eb ff| |ea d9 75 11|
+|fb 26 2a 56|=|7a b5 68 de|
+|61 39 1  4c| |c9 92 98 1d|
+
+Adding Round Key
+|eb 1f 25 87| |ee 1b 70 25| |5  4  55 a2|
+|ea d9 75 11| |53 f2 c8 45| |b9 2b bd 54|
+|7a b5 68 de|+|3e 9  af f9|=|44 bc c7 27|
+|c9 92 98 1d| |a3 58 4e dc| |6a ca d6 c1|
+
+Inverting Mix Columns
+|e  b  d  9 | |5  4  55 a2| |6c 2b eb a8|
+|9  e  b  d | |b9 2b bd 54| |c9 10 10 a5|
+|d  9  e  b |*|44 bc c7 27|=|b8 21 3a d |
+|b  d  9  e | |6a ca d6 c1| |8f 43 38 10|
+
+Inverting Shift Rows
+|6c 2b eb a8| |6c 2b eb a8|
+|c9 10 10 a5| |a5 c9 10 10|
+|b8 21 3a d |=|3a d  b8 21|
+|8f 43 38 10| |43 38 10 8f|
+
+Inverting Sub Bytes
+|6c 2b eb a8| |34 6e 75 74|
+|a5 c9 10 10| |38 19 e1 e1|
+|3a d  b8 21|=|c6 a5 2d 48|
+|43 38 10 8f| |51 61 e1 b |
+
+Adding Round Key
+|34 6e 75 74| |34 42 88 9 | |0  2c fd 7d|
+|38 19 e1 e1| |20 1c d3 35| |18 5  32 d4|
+|c6 a5 2d 48|+|1b 5a 5d 31|=|dd ff 70 79|
+|51 61 e1 b | |e6 66 47 73| |b7 7  a6 78|
+
+Inverting Mix Columns
+|e  b  d  9 | |0  2c fd 7d| |a6 cd e4 c0|
+|9  e  b  d | |18 5  32 d4| |cc d5 e4 12|
+|d  9  e  b |*|dd ff 70 79|=|9f d  5b 25|
+|b  d  9  e | |b7 7  a6 78| |87 c4 42 5f|
+
+Inverting Shift Rows
+|a6 cd e4 c0| |a6 cd e4 c0|
+|cc d5 e4 12| |12 cc d5 e4|
+|9f d  5b 25|=|5b 25 9f d |
+|87 c4 42 5f| |c4 42 5f 87|
+
+Inverting Sub Bytes
+|a6 cd e4 c0| |e5 5e 6b 40|
+|12 cc d5 e4| |f6 94 77 6b|
+|5b 25 9f d |=|f  b7 e4 a5|
+|c4 42 5f 87| |3c 90 3e 8b|
+
+Adding Round Key
+|e5 5e 6b 40| |45 fc c4 7b| |a0 a2 af 3b|
+|f6 94 77 6b| |e  28 91 bd| |f8 bc e6 d6|
+|f  b7 e4 a5|+|12 7a 41 e2|=|1d cd a5 47|
+|3c 90 3e 8b| |d3 7d 1d 2e| |ef ed 23 a5|
+
+Inverting Mix Columns
+|e  b  d  9 | |a0 a2 af 3b| |6b ec 66 66|
+|9  e  b  d | |f8 bc e6 d6| |83 d4 65 4f|
+|d  9  e  b |*|1d cd a5 47|=|33 ff 43 4 |
+|b  d  9  e | |ef ed 23 a5| |71 f9 8f 22|
+
+Inverting Shift Rows
+|6b ec 66 66| |6b ec 66 66|
+|83 d4 65 4f| |4f 83 d4 65|
+|33 ff 43 4 |=|43 4  33 ff|
+|71 f9 8f 22| |f9 8f 22 71|
+
+Inverting Sub Bytes
+|6b ec 66 66| |5f 59 5c 5c|
+|4f 83 d4 65| |55 58 5b 4e|
+|43 4  33 ff|=|51 4d 8  11|
+|f9 8f 22 71| |d  b  2  9 |
+
+Adding Round Key
+|5f 59 5c 5c| |6f 68 6e 6f| |30 31 32 33|
+|55 58 5b 4e| |61 6d 6d 79| |34 35 36 37|
+|51 4d 8  11|+|69 74 69 73|=|38 39 61 62|
+|d  b  2  9 | |6e 6f 67 6f| |63 64 65 66|
+
+
+Plaintext: 0123456789abcdef

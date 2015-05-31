@@ -1,0 +1,24 @@
+---------------------------
+AES + Galois Theory Project
+---------------------------
+
+Alright, so after doing a bunch of galois multiply and modulus
+calculations by hand, I have everything figured out and have
+a GaloisPolynomial class that does the correct operations for
+addition and multiplication with modulus.
+
+NOTE: This was a headache and took me WAY longer than planned...
+
+Obviously this was not necessary for AES, but I wanted to do
+it to try and better show the math and just be different from
+the other AES projects.  My class also works for any Galois
+Polynomials, not just GF(2^8).
+
+Going forward from here I have a very clear picture of how to
+use these operations to apply the transformations for AES
+Sub Bytes, Shift Rows and Mix Columns (mix columns is the only
+one that really uses any Galois operations).
+
+For my project I guess I will be a bit half research and half
+implementation.  I will discuss why AES works and is secure,
+how Galois Field arithmetic works, etc...
